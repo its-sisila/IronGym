@@ -91,8 +91,8 @@ const TestimonialsSection = () => {
                 
                 <h4 className="text-3xl font-black text-off-white uppercase tracking-wider mb-6">{testimonials[index].name}</h4>
                 
-                <div className="w-24 h-24 border-2 border-primary bg-secondary-dark flex items-center justify-center mb-12 shadow-[0_0_20px_rgba(234,179,8,0.2)]">
-                   <span className="text-[10px] text-off-white/40 uppercase tracking-widest text-center px-2">Image<br/>Avatar</span>
+                <div className="w-24 h-24 border-2 border-primary bg-secondary-dark flex items-center justify-center mb-12 shadow-[0_0_20px_rgba(234,179,8,0.2)] overflow-hidden">
+                   <img src="/images/testimonial.png" alt="Client Avatar" className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-300" />
                 </div>
               </motion.div>
             </AnimatePresence>
