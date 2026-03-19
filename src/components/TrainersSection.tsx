@@ -4,9 +4,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const trainers = [
-  { name: 'BORNEY EXITEID' },
-  { name: 'ELSA WINDIA' },
-  { name: 'GEOURGE ARYO' }
+  { name: 'BORNEY EXITEID', image: '/images/trainer_1.png' },
+  { name: 'ELSA WINDIA', image: '/images/trainer_2.png' },
+  { name: 'GEOURGE ARYO', image: '/images/trainer_3.png' }
 ];
 
 const StarRating = () => (
@@ -73,8 +73,12 @@ const TrainersSection = () => {
               key={index} 
               className="relative aspect-[3/4] rounded-sm border border-primary/50 hover:border-primary overflow-hidden group cursor-pointer shadow-2xl transition-colors duration-300"
             >
-              <div className="absolute inset-0 bg-secondary-dark flex items-center justify-center">
-                <span className="text-off-white/20 uppercase tracking-widest font-bold text-center px-4">Trainer Image</span>
+              <div className="absolute inset-0 bg-secondary-dark pointer-events-none">
+                <img 
+                  src={trainer.image} 
+                  alt={trainer.name} 
+                  className="w-full h-full object-cover object-[center_top] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
+                />
               </div>
               
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-100 group-hover:via-black/70 transition-opacity duration-500"></div>
