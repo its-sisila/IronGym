@@ -35,5 +35,4 @@ To get this project running locally on your machine, follow these steps:
 
 ## Live Link
 
-[🔗 Insert Your Vercel Live Link Here]
-*(e.g., https://irongym.vercel.app)*
+https://vercel.com/its-sisilas-projects/iron-gym
