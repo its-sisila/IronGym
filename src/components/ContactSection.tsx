@@ -60,10 +60,10 @@ const ContactSection = () => {
         </div>
         
         <div className="relative z-10 flex flex-col lg:flex-row min-h-[600px] w-full lg:[clip-path:polygon(5%_0,95%_0,100%_100%,0_100%)]">
-          <div className="w-full lg:w-5/12 relative bg-secondary-dark flex items-center justify-center min-h-[400px] lg:min-h-full">
-             <span className="text-off-white/30 uppercase tracking-widest font-bold">Model Image</span>
-             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-dark-background hidden lg:block" />
-             <div className="absolute inset-0 bg-gradient-to-t from-dark-background to-transparent block lg:hidden" />
+          <div className="w-full lg:w-5/12 relative bg-secondary-dark flex items-center justify-center min-h-[400px] lg:min-h-full overflow-hidden">
+             <img src="/images/contact_image.png" alt="Gym training" className="absolute inset-0 w-full h-full object-cover object-center z-0 grayscale" />
+             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-dark-background hidden lg:block z-10" />
+             <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-dark-background block lg:hidden z-10" />
           </div>
           
           <div className="w-full lg:w-7/12 p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-dark-background">
