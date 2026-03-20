@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
   return (
-    <section className="relative text-off-white py-32 px-4 overflow-hidden">
-      
+    <section className="relative text-off-white py-16 lg:py-32 px-4 overflow-hidden">
+
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/about_us_section_background.png" 
-          alt="Gym interior background" 
+        <img
+          src="/images/about_us_section_background.png"
+          alt="Gym interior background"
           className="w-full h-full object-cover object-center"
         />
         {/* Dark overlay for readability */}
@@ -19,9 +19,9 @@ const AboutSection = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
-        
+
         {/* Left Column: Text Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -34,13 +34,13 @@ const AboutSection = () => {
               EXPERIENCE
             </span>
           </h2>
-          
+
           <div className="space-y-6 text-off-white/70 text-base md:text-lg leading-relaxed font-normal">
             <p>
-              In quisque nunc dictumst etiam pellentesque et. Vel malesuada diam lorem tellus. Amet mauris feugiat ipsum natoque odio donec. Sit at lacus consequat justo odio condimentum dui. Faucibus id blandit feugiat mi tellus sit etiam donec aliquam. Dictumst egestas ut facilisi vel.
+              With over a three years of dedication to the fitness industry, we have transformed thousands of lives through our scientific approach to training and nutrition. Our certified expert trainers bring deep knowledge in strength conditioning, functional movement, and athletic performance to help you reach your peak physical state.
             </p>
             <p>
-              Sem consequat fermentum pellentesque risus purus quis gravida. Nulla porttitor ultrices facilisis non commodo diam morbi cursus eu. Semper ut in mauris gravida id cursus urna. Magnis vulputate orci risus felis eget lectus morbi. Et cursus mauris condimentum pretium arcu sed dignissim.
+              We believe that fitness is a journey, not a destination. Our state-of-the-art facility is more than just a gym; it&apos;s a community where passion meets discipline. Whether you are a beginner or a seasoned athlete, we provide the environment and the expertise required to unlock your full potential.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ const AboutSection = () => {
         </motion.div>
 
         {/* Right Column: Image with offset frames */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -67,9 +67,9 @@ const AboutSection = () => {
 
           {/* Main Photo Center */}
           <div className="relative z-10 w-full shadow-2xl overflow-hidden aspect-[4/5] bg-dark-background">
-            <img 
-              src="/images/about_us_section_image.png" 
-              alt="Man doing pullups" 
+            <img
+              src="/images/about_us_section_image.png"
+              alt="Man doing pullups"
               className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
             />
           </div>
