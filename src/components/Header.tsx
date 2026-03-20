@@ -30,28 +30,26 @@ export default function Header() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className={`w-full text-off-white px-6 fixed top-0 z-50 transition-all duration-300 border-b ${
-          scrolled 
-            ? 'bg-dark-background/90 backdrop-blur-md shadow-lg border-off-white/10 py-4' 
-            : 'bg-gradient-to-b from-black/80 to-transparent border-transparent py-6'
-        }`}
+        className={`w-full text-off-white px-6 fixed top-0 z-50 transition-all duration-300 border-b ${scrolled
+          ? 'bg-dark-background/90 backdrop-blur-md shadow-lg border-off-white/10 py-4'
+          : 'bg-gradient-to-b from-black/80 to-transparent border-transparent py-6'
+          }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          
+
           {/* Logo */}
           <Link href="/" className="text-2xl md:text-3xl font-black uppercase tracking-tighter relative z-50">
             IRON<span className="text-primary">GYM</span>
           </Link>
-          
+
           {/* Navigation Links */}
           <nav className="hidden lg:flex gap-10 items-center">
             {links.map((link, index) => (
-              <Link 
-                key={index} 
-                href={link.href} 
-                className={`text-sm font-bold uppercase tracking-wider relative group outline-none ${
-                  link.name === 'HOME' ? 'text-primary' : 'text-off-white hover:text-primary transition-colors duration-300'
-                }`}
+              <Link
+                key={index}
+                href={link.href}
+                className={`text-sm font-bold uppercase tracking-wider relative group outline-none ${link.name === 'HOME' ? 'text-primary' : 'text-off-white hover:text-primary transition-colors duration-300'
+                  }`}
               >
                 {link.name}
                 {/* Animated Underline */}
@@ -59,20 +57,20 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-          
+
           {/* Call to Action Button */}
           <div className="hidden lg:block relative z-50">
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-primary text-dark-background font-black py-4 px-8 text-sm uppercase tracking-widest hover:bg-yellow-400 transition-colors"
             >
-              STARTED NOW
+              JOIN US
             </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden text-primary p-2 focus:outline-none relative z-50"
             aria-label="Toggle Menu"
@@ -85,7 +83,7 @@ export default function Header() {
               )}
             </svg>
           </button>
-          
+
         </div>
       </motion.header>
 
@@ -101,18 +99,17 @@ export default function Header() {
           >
             <nav className="flex flex-col gap-6 items-center w-full mt-10 pb-10">
               {links.map((link, index) => (
-                <Link 
-                  key={index} 
-                  href={link.href} 
+                <Link
+                  key={index}
+                  href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-xl font-bold uppercase tracking-wider w-full text-center py-4 border-b border-off-white/10 ${
-                    link.name === 'HOME' ? 'text-primary' : 'text-off-white hover:text-primary transition-colors'
-                  }`}
+                  className={`text-xl font-bold uppercase tracking-wider w-full text-center py-4 border-b border-off-white/10 ${link.name === 'HOME' ? 'text-primary' : 'text-off-white hover:text-primary transition-colors'
+                    }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <motion.button 
+              <motion.button
                 whileTap={{ scale: 0.95 }}
                 className="bg-primary text-dark-background font-black py-4 px-12 mt-8 text-lg uppercase tracking-widest w-full max-w-sm"
               >
