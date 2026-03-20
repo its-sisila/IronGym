@@ -47,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="bg-dark-background py-32 px-4 overflow-hidden flex justify-center items-center text-off-white">
+    <section id="contact" className="bg-dark-background py-16 lg:py-32 px-4 overflow-hidden flex justify-center items-center text-off-white">
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
